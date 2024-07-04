@@ -26,8 +26,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Renovate Bot GitHub Action
-        uses: renovatebot/github-action@v40.2.0
+      # - name: Renovate Bot GitHub Action
+      #   uses: renovatebot/github-action@v40.2.0
             
 
       # Runs a single command using the runners shell
