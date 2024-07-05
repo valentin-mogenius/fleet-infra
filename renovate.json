@@ -4,6 +4,6 @@
     "config:recommended"
   ],
   "flux": {
-    "fileMatch": ["^.*helm-release\\.yaml$"]
+    "fileMatch": ["^.*helm-release\\.yaml$", "^.*-repo\\.yaml$"]
   }
 }
