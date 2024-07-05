@@ -1,0 +1,22 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: trivy-operator
+  namespace: trivy-operator
+spec:
+  interval: 15m
+  chart:
+    spec:
+      chart: trivy-operator
+      version: "0.22.*" # Specify the version of the chart you want to install
+      sourceRef:
+        kind: HelmRepository
+        name: aqua
+        namespace: flux-system
+  values:
+    # Custom values for the Trivy operator
+    serviceAccount:
+      create: true
+      annotations: {}
+    podAnnotations: {}
+    # Add additional custom values as needed
