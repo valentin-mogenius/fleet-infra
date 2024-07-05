@@ -3,23 +3,7 @@
   "extends": [
     "config:recommended"
   ],
-  "packageRules": [
-    {
-      "matchManagers": ["regex"],
-      "matchPackagePatterns": [".*"],
-      "matchDepTypes": ["helm"],
-      "matchUpdateTypes": ["major"],
-      "regexManagers": [
-        {
-          "fileMatch": ["^.*helm-release\\.yaml$"],
-          "matchStrings": [
-            "version: \"(?<currentValue>.+)\""
-          ],
-          "depNameTemplate": "helm-chart",
-          "datasourceTemplate": "helm",
-          "versioningTemplate": "semver"
-        }
-      ]
-    }
-  ]
+  "flux": {
+    "fileMatch": ["^.*helm-release\\.yaml$"]
+  }
 }
