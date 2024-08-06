@@ -21,7 +21,7 @@ spec:
 
     # -- targetWorkloads is a comma seperated list of Kubernetes workload resources
     # to be included in the vulnerability and config-audit scans
-    # if left blank, all workload resources will be scanned
+    # if left blank, all workload resources will be scanned -> very resource intensive!
     targetWorkloads: "pod,replicaset,replicationcontroller,statefulset,daemonset,cronjob,job"
 
     # Add additional custom values as needed
