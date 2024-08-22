@@ -4,5 +4,6 @@ metadata:
   name: truecharts
   namespace: flux-system
 spec:
-  url: https://truecharts.org/charts/stable/
+  # url: https://truecharts.org/charts/stable/
+  url: oci://tccr.io/truecharts
   interval: 10m
