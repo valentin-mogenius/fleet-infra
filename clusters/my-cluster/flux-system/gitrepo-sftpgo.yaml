@@ -5,6 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1h
-  url: https://github.com/truecharts/charts
+  # url: https://github.com/truecharts/charts
+  url: https://github.com/truecharts/charts/tree/master/charts/stable/sftpgo
   ref:
     branch: master
