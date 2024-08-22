@@ -5,5 +5,6 @@ metadata:
   namespace: flux-system
 spec:
   # url: https://truecharts.org/charts/stable/
-  url: oci://tccr.io/truecharts
+  # url: oci://tccr.io/truecharts
+  url: https://github.com/truecharts/charts/tree/master/charts/stable/sftpgo
   interval: 10m
