@@ -4,7 +4,7 @@ metadata:
   name: truecharts-repo
   namespace: flux-system
 spec:
-  interval: 1h
+  interval: 30s
   url: https://github.com/truecharts/charts
   ref:
-    branch: master
+    tag: sftpgo-5.1.11

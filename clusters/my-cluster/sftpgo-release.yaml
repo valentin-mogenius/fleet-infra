@@ -7,11 +7,11 @@ spec:
   chart:
     spec:
       chart: ./charts/stable/sftpgo
+      # version: this doesn't work with local charts
       sourceRef:
         kind: GitRepository
         name: truecharts-repo
         namespace: flux-system
-      version: "5.1.*"
   interval: 30s
   releaseName: internal-sftpgo
   install:
