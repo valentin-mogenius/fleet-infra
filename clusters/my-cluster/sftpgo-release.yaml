@@ -6,10 +6,10 @@ metadata:
 spec:
   chart:
     spec:
-      chart: sftpgo
+      chart: ./charts/stable/sftpgo
       sourceRef:
-        kind: HelmRepository
-        name: truecharts
+        kind: GitRepository
+        name: truecharts-repo
         namespace: flux-system
       version: "5.1.*"
   interval: 30s
