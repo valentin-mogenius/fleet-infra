@@ -18,4 +18,5 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m0s
-  url: oci://tccr.io/truecharts
+  # url: oci://tccr.io/truecharts
+  url: oci://tccr.io/truecharts/sftpgo
