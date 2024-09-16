@@ -20,5 +20,5 @@ spec:
   interval: 30s
   url: oci://tccr.io/truecharts/sftpgo
   ref:
-    tag: 5.1.11
+    tag: 8.1.8
   #   tag: 8.1.0
