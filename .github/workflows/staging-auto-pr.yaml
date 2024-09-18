@@ -1,0 +1,21 @@
+name: Image update Auto-PR
+on:
+  create:
+
+jobs:
+  pull-request:
+    if: ${{ github.ref == 'refs/heads/flux-image-updates' }} # This condition ensures the job only runs for the 'flux-image-updates' branch.
+    name: Open PR to main
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      name: checkout
+
+    - uses: repo-sync/pull-request@v2
+      name: pull-request
+      with:
+        destination_branch: "main"
+        pr_title: "Pulling ${{ github.ref }} into main"
+        pr_body: ":crown: *An automated PR*"
+        pr_draft: true
+        github_token: ${{ secrets.GITHUB_TOKEN }}
