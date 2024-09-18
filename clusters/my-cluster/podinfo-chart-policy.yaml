@@ -9,4 +9,4 @@ spec:
     name: podinfo-chart
   policy:
     semver:
-      range: 5.0.x
+      range: 5.x.x
