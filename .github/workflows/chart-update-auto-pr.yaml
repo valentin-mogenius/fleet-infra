@@ -4,7 +4,7 @@ on:
 
 jobs:
   pull-request:
-    if: ${{ github.ref == 'refs/heads/flux-image-updates' }} # This condition ensures the job only runs for the 'flux-image-updates' branch.
+    if: ${{ github.ref == 'refs/heads/flux-chart-updates' }} # This condition ensures the job only runs for the 'flux-image-updates' branch.
     name: Open PR to main
     runs-on: ubuntu-latest
     permissions:
