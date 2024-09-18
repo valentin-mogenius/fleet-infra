@@ -30,4 +30,4 @@ flux create image update flux-system \
 --commit-template="{{range .Changed.Changes}}{{print .OldValue}} -> {{println .NewValue}}{{end}}" \
 --export > ./clusters/my-cluster/flux-system-automation.yaml
 
-
+ Choose whether GitHub Actions can create pull requests or submit approving pull request reviews. 
