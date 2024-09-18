@@ -34,7 +34,7 @@ spec:
     # push:
     #   branch: main
     push:
-      branch: flux-chart-updates
+      branch: flux-chart-updates-dex
   interval: 3m0s
   sourceRef:
     kind: GitRepository

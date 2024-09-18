@@ -4,7 +4,7 @@ on:
 
 jobs:
   pull-request:
-    if: ${{ github.ref == 'refs/heads/flux-chart-updates' }} # This condition ensures the job only runs for the 'flux-image-updates' branch.
+    if: ${{ github.ref == 'refs/heads/flux-chart-updates-dex' }} # This condition ensures the job only runs for the 'flux-image-updates' branch.
     name: Open PR to main
     runs-on: ubuntu-latest
     permissions:
@@ -21,4 +21,5 @@ jobs:
         pr_title: "Pulling ${{ github.ref }} into main"
         pr_body: ":crown: *An automated PR*"
         pr_draft: true
+        pr_reviewer: "valentin-mogenius"
         github_token: ${{ secrets.GITHUB_TOKEN }}

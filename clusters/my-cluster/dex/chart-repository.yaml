@@ -1,0 +1,9 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: dex
+  namespace: flux-system
+spec:
+  image: https://charts.dexidp.io
+  interval: 5m0s
