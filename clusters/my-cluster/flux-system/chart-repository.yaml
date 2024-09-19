@@ -5,7 +5,8 @@ metadata:
   name: dex
   namespace: flux-system
 spec:
-  image: charts.dexidp.io
+  # image: ghcr.io/dexidp/helm-charts
+  image: github.com/dexidp/helm-charts
   interval: 1m0s
 
 ---
