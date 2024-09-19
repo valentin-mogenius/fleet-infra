@@ -3,16 +3,17 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: dex
-  namespace: default
+  namespace: flux-system
 spec:
   image: https://charts.dexidp.io
   interval: 5m0s
+
 ---
-apiVersion: image.toolkit.fluxcd.io/v1beta2
+apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:
   name: dex
-  namespace: default
+  namespace: flux-system
 spec:
   interval: 5m0s
   url: https://charts.dexidp.io

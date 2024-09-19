@@ -10,8 +10,8 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: dex
-        namespace: default
-      version: "0.15.0" # {"$imagepolicy": "default:dex:tag"}
+        namespace: flux-system
+      version: "0.15.0" # {"$imagepolicy": "flux-system:dex:tag"}
   interval: 3m0s
   releaseName: dex
   targetNamespace: default
