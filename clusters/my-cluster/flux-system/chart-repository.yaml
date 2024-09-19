@@ -5,7 +5,7 @@ metadata:
   name: dex
   namespace: flux-system
 spec:
-  image: https://charts.dexidp.io
+  image: charts.dexidp.io
   interval: 5m0s
 
 ---
