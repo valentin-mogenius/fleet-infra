@@ -1,9 +1,21 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
+  "extends": ["config:base"],
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.yaml$"],
+      "matchStrings": [
+        "version:\\s?\"(?<currentValue>.*?)\"\\s*\\n\\s*chart:\\s*\\n\\s*spec:\\s*\\n\\s*chart:\\s*(?<depName>dex)"
+      ],
+      "datasourceTemplate": "helm",
+      "versioningTemplate": "semver"
+    }
   ],
-  "flux": {
-    "fileMatch": ["^.*helm-release\\.yaml$", "^.*-repo\\.yaml$"]
+  "helm": {
+    "repositories": [
+      {
+        "name": "dex",
+        "url": "https://charts.dexidp.io"
+      }
+    ]
   }
 }
