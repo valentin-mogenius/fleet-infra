@@ -1,0 +1,16 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: sftpgo
+  namespace: default
+spec:
+  chart:
+    spec:
+      chart: sftpgo
+      sourceRef:
+        kind: HelmRepository
+        name: truecharts
+        namespace: flux-system
+      version: "5.1.0"
+  interval: 1m
+  releaseName: sftpgo
