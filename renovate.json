@@ -9,12 +9,5 @@
       "datasourceTemplate": "helm",
       "versioningTemplate": "semver"
     }
-  ],
-  "packageRules": [
-    {
-      "matchManagers": ["regex"],
-      "datasourceTemplate": "helm",
-      "versioningTemplate": "semver"
-    }
   ]
 }
