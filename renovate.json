@@ -1,6 +1,9 @@
 {
   "extends": ["config:base"],
   "flux": {
-    "fileMatch": ["clusters/my-cluster/.+\\.yaml$"]
+    "fileMatch": [
+      "clusters/my-cluster/.+\\.yaml$",
+      "clusters/my-cluster/flux-system/.+\\.yaml$"
+    ]
   }
 }
