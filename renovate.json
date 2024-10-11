@@ -10,12 +10,11 @@
       "versioningTemplate": "semver"
     }
   ],
-  "helm": {
-    "repositories": [
-      {
-        "name": "dex",
-        "url": "https://charts.dexidp.io"
-      }
-    ]
-  }
+  "packageRules": [
+    {
+      "matchManagers": ["regex"],
+      "datasourceTemplate": "helm",
+      "versioningTemplate": "semver"
+    }
+  ]
 }
